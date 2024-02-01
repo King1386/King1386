@@ -1,19 +1,19 @@
+username = 'TEST'
 SAMPMENU = 1
 
 gg.toast("Please wait ⏳")
-gtname()
 
-teltxtzz = '💥 NEW LOG 💥\n🟢 username = '.. username .. '\n🟢 ' .. nmegame .. " \n🟢 Server = " .. srvr.. "\n🟢 info = Use SilentAim Script"
+teltxtzz = "💥 NEW LOG 💥\n🟢 username = '.. TEST ..'\n🟢 NoName = '.. NoName ..'\n🟢 Server = '.. Server ..'\n🟢 info = '.. info ..'"
 
- payloadz =
+local payloads = 
 '{"UrlBox":"https://api.telegram.org/bot6559999188:AAEUQgh9w0ktXa4sONx5mLk_nFCwHylyuN0/sendMessage?chat_id=6475604987&text=' .. teltxtzz ..'","AgentList":"Internet Explorer","VersionsList":"HTTP/1.1","MethodList":"POST"}'
-recxx = gg.makeRequest("https://www.httpdebugger.com/tools/ViewHttpHeaders.aspx",
-{
-["Authorization"] = "Maybe you need an Authorization header?",
-["Content-Type"] = "application/json",
-["Content-Length"] = payloadz:len()
-},
-payloadz
+
+recxx = gg.makeRequest("https://www.httpdebugger.com/tools/ViewHttpHeaders.aspx", {
+['Authorization'] = 'Maybe you need an Authorization header?',
+['Content-Length'] = payloads:len(),
+['Content-Type'] = 'application/json',
+}, 
+payloads
 )
 
 gg.setVisible(true)
@@ -353,8 +353,23 @@ end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 function fpsup()
-  gg.sleep(300)
+  sfp = gg.choice({
+      '⌜ ᴀᴄᴛɪᴠᴇ ⌟', 
+      ' ⟪ ʙᴀᴄᴋ ⟫ ' }, nil,
+    '◤                                                       ◥\n               ◄ fps 90 ►               \n◣                                                       ◢')
+
+  if sfp == 1 then bc1() end
+  if sfp == 2 then HOME() end
+end
+function bc1()
+gg.setVisible(false)
+  gg.setRanges(gg.REGION_C_DATA)
+  gg.searchNumber('1000', gg.TYPE_FLOAT);
+  gg.getResults(25000)
+  gg.editAll('90', gg.TYPE_FLOAT)
+  gg.clearResults()
   gg.toast('[' .. username .. ']' .. ' Cheat Active ✅')
+  gg.clearResults()
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -415,24 +430,32 @@ end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 function slap()
-  gg.setRanges(gg.REGION_C_DATA | gg.REGION_CODE_APP)
-  gg.searchNumber("0.00000911894;-0.08607242256;0.00800000038;-0.00800000038:13", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0,
-    -1, 0)
-  gg.refineNumber("0.008", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
-  revert = gg.getResults(5000, nil, nil, nil, nil, nil, nil, nil, nil)
-  gg.editAll("-1", gg.TYPE_FLOAT)
-  gg.editAll("0.0008", gg.TYPE_FLOAT)
-  gg.sleep(2000)
-  gg.editAll("0.009", gg.TYPE_FLOAT)
-  gg.sleep(500)
-  gg.editAll("0.0008", gg.TYPE_FLOAT)
-  gg.sleep(1000)
-  gg.editAll("0.008", gg.TYPE_FLOAT)
-  gg.sleep(500)
-  gg.editAll("0.0008", gg.TYPE_FLOAT)
-  gg.sleep(1000)
-  gg.editAll("0.008", gg.TYPE_FLOAT)
+  kiop = gg.choice({
+      '⌜ ᴏɴ ⌟',
+      '⌜ ᴏғғ ⌟',
+      ' ⟪ ʙᴀᴄᴋ ⟫ ' }, nil,
+    '◤                                                       ◥\n               ◄ Gravity ►               \n◣                                                       ◢')
+
+  if kiop == 1 then dw1() end
+  if kiop == 2 then dw2() end
+  if kiop == 3 then HOME() end
+end
+
+function dw1()
+ gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber('0.008', gg.TYPE_FLOAT)
+gg.getResults(2500)
+gg.editAll('0.0002', gg.TYPE_FLOAT)
   gg.toast('[' .. username .. ']' .. ' Cheat Active ✅')
+  gg.clearResults()
+end
+
+function dw2()
+ gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber('0.0002', gg.TYPE_FLOAT)
+gg.getResults(2500)
+gg.editAll('0.008', gg.TYPE_FLOAT)
+  gg.toast('[' .. username .. ']' .. ' Cheat Deactive ✅')
   gg.clearResults()
 end
 
@@ -531,7 +554,7 @@ function hj()
       '⌜ ᴏɴ ⌟',
       '⌜ ᴏғғ ⌟',
       ' ⟪ ʙᴀᴄᴋ ⟫ ' }, nil,
-    '◤                                                       ◥\n               ◄ ʜɪɢʜᴊᴜᴍᴘ ►               \n◣                                                       ◢')
+    '◤                                                       ◥\n               ◄ Suicide ►               \n◣                                                       ◢')
 
   if khhhhhhhhhhhh == 1 then hj1() end
   if khhhhhhhhhhhh == 2 then hj2() end
@@ -540,30 +563,67 @@ end
 
 function hj1()
   gg.setRanges(gg.REGION_C_DATA | gg.REGION_CODE_APP)
-  gg.searchNumber("0.69999998808;-0.20000000298;-0.10000000149:17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
-  gg.refineNumber("-0.1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
-  revert = gg.getResults(999, nil, nil, nil, nil, nil, nil, nil, nil)
-  gg.editAll("-60", gg.TYPE_FLOAT)
+gg.searchNumber('0.008', gg.TYPE_FLOAT)
+gg.getResults(2500)
+gg.editAll('10.555', gg.TYPE_FLOAT)
   gg.toast('[' .. username .. ']' .. ' Cheat Active ✅')
   gg.clearResults()
 end
 
 function hj2()
   gg.setRanges(gg.REGION_C_DATA)
-  gg.searchNumber("0.69999998808;-0.20000000298;-60:17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
-  gg.refineNumber("-60", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
-  revert = gg.getResults(100000, nil, nil, nil, nil, nil, nil, nil, nil)
-  gg.editAll('-0.1', gg.TYPE_FLOAT)
+gg.searchNumber('10.555', gg.TYPE_FLOAT)
+gg.getResults(2500)
+gg.editAll('0.008', gg.TYPE_FLOAT)
   gg.toast('[' .. username .. ']' .. ' Cheat Deative ✅')
   gg.clearResults()
 end
 
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+function Skate()
+  Skat = gg.choice({
+      '⌜ ᴏɴ ⌟',
+      '⌜ ᴏғғ ⌟', 
+      ' ⟪ ʙᴀᴄᴋ ⟫ ' }, nil,
+    '◤                                                       ◥\n               ◄ Skate ►               \n◣                                                       ◢')
+
+  if Skat == 1 then Skt1() end
+  if Skat == 2 then Skt2() end
+  if Skat == 3 then HOME() end
+end
+function Skt1()
+gg.setVisible(false)
+  gg.setRanges(gg.REGION_C_DATA)
+  gg.searchNumber("0.69999998808;-0.20000000298;-0.10000000149;0.80000001192:13", gg.TYPE_FLOAT, false,
+    gg.SIGN_EQUAL, 0, -1, 0)
+  gg.refineNumber("0.8", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+  revert = gg.getResults(400, nil, nil, nil, nil, nil, nil, nil, nil)
+  gg.editAll('60', gg.TYPE_FLOAT)
+  gg.toast('[' .. username .. ']' .. ' Cheat Active ✅')
+  gg.clearResults()
+end
+
+function Skt2()
+gg.setVisible(false)
+  gg.setRanges(gg.REGION_C_DATA)
+  gg.searchNumber("0.69999998808;-0.20000000298;-0.10000000149;60:13", gg.TYPE_FLOAT, false,
+    gg.SIGN_EQUAL, 0, -1, 0)
+  gg.refineNumber("60", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+  revert = gg.getResults(400, nil, nil, nil, nil, nil, nil, nil, nil)
+  gg.editAll('0.8', gg.TYPE_FLOAT)
+  gg.toast('[' .. username .. ']' .. ' Cheat Active ✅')
+  gg.clearResults()
+end
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 function HOME()
   MultiMenu = gg.choice(
-    { "💥Silent Aim💥", "🏙TP To DmZone🏙", "🔫GUN FOR WAR🔫", "🎭CBUG Zed Rec🎭", "🎃Slow Motion🎃",
-      "👓Fast Run👓", "💎FPS BOOST💎", "📱Wall Hack📱", "🚑GM Car🚑", "🚀Slap🚀", "👊Fast Fist👊",
-      "👀Ipad View(360)👀", "♥God Mode♥", "👟High Jump👟", "🚫EXIT" }, nil,
+    {"🛡️Fps Boost🛡️", "🛹Skate🛹", "🛸Gravity🛸", "👺Suicide👺", "⛔EXIT⛔"}, nil,
     "============================\n🗣UserName: " ..
     username ..
     "\n============================\n⏳now : " ..
@@ -572,29 +632,16 @@ function HOME()
     os.date("%m") ..
     "/" ..
     os.date("%d") ..
-    "\n⏳Expired in : " ..
-    tostring(Year) ..
-    "/" ..
-    tostring(Month) .. "/" .. tostring(Date) ..
-    "\n💎Creator : [PKN] @No_Pulse\n🌎Channel : @Cheaters_Samp")
+    "\n⏳Expired in : 2024/2/2" ..
+    "\n💎Creator : [SAMP] @Cemetery10\n🌎Channel : @Silent_Aim_Pkn")
   if MultiMenu == nil then
     SAMPMENU = -1
   else
-    if MultiMenu == 1 then silent() end
-    if MultiMenu == 2 then tpselector() end
-    if MultiMenu == 3 then gunwar() end
-    if MultiMenu == 4 then speedfire() end
-    if MultiMenu == 5 then slow() end
-    if MultiMenu == 6 then speedspr() end
-    if MultiMenu == 7 then fpsup() end
-    if MultiMenu == 8 then wallhack() end
-    if MultiMenu == 9 then gmcar() end
-    if MultiMenu == 10 then slap() end
-    if MultiMenu == 11 then fh() end
-    if MultiMenu == 12 then ipadView() end
-    if MultiMenu == 13 then gm() end
-    if MultiMenu == 14 then hj() end
-    if MultiMenu == 15 then EXIT() end
+    if MultiMenu == 1 then fpsup() end
+    if MultiMenu == 2 then Skate() end
+    if MultiMenu == 3 then slap() end
+    if MultiMenu == 4 then hj() end
+    if MultiMenu == 5 then EXIT() end
   end
   SAMPMENU = -1
 end
@@ -610,10 +657,10 @@ function checking()
     gg.toast("Please wait ⏳")
 
 
-    Date = 9
+    Date = 2
     Month = 2
     Year = 2024
-    expiremessage = "⭕Your Script Expired \n \n--> Please send message in Telegram (my id @No_Pulse) for get new version"
+    expiremessage = "⭕Your Script Expired \n \n--> Please send message in Telegram (my id @Cemetery10) for get new version"
   
     expiredate = Year .. check(Month) .. check(Date)
     date = gg.makeRequest("http://www.google.com").headers["Date"][1]
@@ -632,18 +679,12 @@ function checking()
       gg.alert(expiremessage)
       os.exit()
     else
-      if ver == '3.3' then
         if SAMPMENU == 1 then
           HOME()
-          gg.toast(username.. " join @Cheaters_Samp")
+          gg.toast(username.. " join @Silent_Aim_Pkn")
         end
-     else
-        gg.alert("⭕ Please use last version of LOGIN SCRIPT\n\n 💥 Download = @Cheaters_Samp (in telegram)") os.exit()
-  
-  
-         end
-    end
-end
+     end
+  end
 
 while (true) do
   if gg.isVisible(true) then
@@ -651,7 +692,6 @@ while (true) do
      gg.setVisible(false)
      checking()
   end
-
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
