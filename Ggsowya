@@ -58,7 +58,7 @@ end
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 function silent()
   WH1 = gg.choice({
-    "🧍𝐒𝐈𝐋𝐄𝐍𝐓🧍【30】",
+    "🧍𝐒𝐈𝐋𝐄𝐍𝐓🧍【40】",
     "⁦⁦                            ⟪ ʙᴀᴄᴋ ⟫",
   }, nil, "🇮🇷[S]amp [C]heats\n 💯creator : @Cemetery10\n 🔰Channel : @Silent_Aim_Pkn")
   if WH1 == 2 then HOME() end
@@ -66,7 +66,7 @@ function silent()
         '⌜ ᴏɴ ⌟',
         '⌜ ᴏғғ ⌟',
         ' ⟪ ʙᴀᴄᴋ ⟫ ' }, nil,
-      '◤                                                       ◥\n               ◄ silent 30 ►               \n◣                                                       ◢')
+      '◤                                                       ◥\n               ◄ silent 40 ►               \n◣                                                       ◢')
 
     if hahaha == 1 then silentHead() end
     if hahaha == 2 then silentHeadoff() end
@@ -106,12 +106,107 @@ function silentHeadoff()
   silent()
 end
 
+
+
+
+
+function gm()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("8~100;100.06400146484~150.66400146484;7.5:33", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+  gg.refineNumber("8~101", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+  revert = gg.getResults(999, nil, nil, nil, nil, nil, nil, nil, nil)
+  revert = gg.getResults(999, nil, nil, nil, nil, nil, nil, nil, nil)
+  local t = gg.getResults(999, nil, nil, nil, nil, nil, nil, nil, nil)
+  for i, v in ipairs(t) do
+    if v.flags == gg.TYPE_FLOAT then
+      v.value = "500000000000.0"
+      v.freeze = true
+    end
+  end
+  gg.addListItems(t)
+  t = nil
+  gg.clearResults()
+  gg.toast('[' .. username .. ']' .. ' Cheat Active ✅')
+end
+
+
+
+
+function gmcar()
+  gg.searchNumber(1000, gg.TYPE_FLOAT)
+  gg.getResults(84)
+  gg.editAll(1000000000, gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast('[' .. username .. ']' .. ' Cheat Active ✅')
+end
+
+
+
+
+function Skate()
+  Skat = gg.choice({
+      '⌜ ᴏɴ ⌟',
+      '⌜ ᴏғғ ⌟', 
+      ' ⟪ ʙᴀᴄᴋ ⟫ ' }, nil,
+    '◤                                                       ◥\n               ◄ Skate ►               \n◣                                                       ◢')
+
+  if Skat == 1 then Skt1() end
+  if Skat == 2 then Skt2() end
+  if Skat == 3 then HOME() end
+end
+function Skt1()
+gg.setVisible(false)
+  gg.setRanges(gg.REGION_C_DATA)
+  gg.searchNumber("0.69999998808;-0.20000000298;-0.10000000149;0.80000001192:13", gg.TYPE_FLOAT, false,
+    gg.SIGN_EQUAL, 0, -1, 0)
+  gg.refineNumber("0.8", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+  revert = gg.getResults(400, nil, nil, nil, nil, nil, nil, nil, nil)
+  gg.editAll('60', gg.TYPE_FLOAT)
+  gg.toast('[' .. username .. ']' .. ' Cheat Active ✅')
+  gg.clearResults()
+end
+
+function Skt2()
+gg.setVisible(false)
+  gg.setRanges(gg.REGION_C_DATA)
+  gg.searchNumber("0.69999998808;-0.20000000298;-0.10000000149;60:13", gg.TYPE_FLOAT, false,
+    gg.SIGN_EQUAL, 0, -1, 0)
+  gg.refineNumber("60", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+  revert = gg.getResults(400, nil, nil, nil, nil, nil, nil, nil, nil)
+  gg.editAll('0.8', gg.TYPE_FLOAT)
+  gg.toast('[' .. username .. ']' .. ' Cheat Active ✅')
+  gg.clearResults()
+end
+
+
+
+
+function fpsup()
+  sfp = gg.choice({
+      '⌜ ᴀᴄᴛɪᴠᴇ ⌟', 
+      ' ⟪ ʙᴀᴄᴋ ⟫ ' }, nil,
+    '◤                                                       ◥\n               ◄ fps 90 ►               \n◣                                                       ◢')
+
+  if sfp == 1 then bc1() end
+  if sfp == 2 then HOME() end
+end
+function bc1()
+gg.setVisible(false)
+  gg.setRanges(gg.REGION_C_DATA)
+  gg.searchNumber('1000', gg.TYPE_FLOAT);
+  gg.getResults(25000)
+  gg.editAll('90', gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast('[' .. username .. ']' .. ' Cheat Active ✅')
+  gg.clearResults()
+end
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 function HOME()
   MultiMenu = gg.choice(
-    {"💥Silent Aim💥", "⛔EXIT⛔"}, nil,
+    {"💥Silent Aim💥", "🛡️Fps Boost🛡️", "♥God Mode♥", "🚒GM Car🚒", "🛹Skate🛹", "⛔EXIT⛔"}, nil,
     "============================\n🗣UserName: " ..
     username ..
     "\n============================\n⏳now : " ..
@@ -126,7 +221,11 @@ function HOME()
     SAMPMENU = -1
   else
     if MultiMenu == 1 then silent() end
-    if MultiMenu == 2 then EXIT() end
+    if MultiMenu == 2 then fpsup() end
+    if MultiMenu == 3 then gm() end
+    if MultiMenu == 4 then gmcar() end
+    if MultiMenu == 5 then Skate() end
+    if MultiMenu == 6 then EXIT() end
   end
   SAMPMENU = -1
 end
