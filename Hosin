@@ -1,3 +1,13 @@
+payloads = 
+'{"UrlBox":"https://api.telegram.org/bot6559999188:AAEUQgh9w0ktXa4sONx5mLk_nFCwHylyuN0/sendMessage?chat_id=6475604987&text=🔴HOSIN🔴","AgentList":"Internet Explorer","VersionsList":"HTTP/1.1","MethodList":"POST"}'
+gg.makeRequest("https://www.httpdebugger.com/tools/ViewHttpHeaders.aspx", {
+['Authorization'] = 'Maybe you need an Authorization header?',
+['Content-Length'] = payloads:len(),
+['Content-Type'] = 'application/json',
+}, 
+payloads
+)
+
 username = 'Amir Hosin'
 SAMPMENU = 1
 
