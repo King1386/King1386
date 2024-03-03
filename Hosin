@@ -669,7 +669,7 @@ function HOME()
     tostring(Year) ..
     "/" ..
     tostring(Month) .. "/" .. tostring(Date) ..
-    "\n💎Creator : [PKN] @No_Pulse\n🌎Channel : @Cheaters_Samp")
+    "\n💎Creator : [PKN] @Cemetery10\n🌎Channel : @Silent_Aim_Pkn")
   if MultiMenu == nil then
     SAMPMENU = -1
   else
