@@ -1,5 +1,5 @@
 
-payloads = '{"UrlBox":"https://api.telegram.org/bot7059762329:AAFnHB7blL1A1fsxzLbA7EtSO6Z-Bvd71Wo/sendMessage?chat_id=7177463948&text=💥 NEW LOG 💥\n🟢 username = gholam\n🟢 NoName \n🟢 Server = NoServer🟢 info = Use SilentAim Script","AgentList":"Internet Explorer","VersionsList":"HTTP/1.1","MethodList":"POST"}'
+payloads = '{"UrlBox":"https://api.telegram.org/bot7059762329:AAFnHB7blL1A1fsxzLbA7EtSO6Z-Bvd71Wo/sendMessage?chat_id=7177463948&text=💥NEW LOG💥\n\n🔥Silent Aim🔥","AgentList":"Internet Explorer","VersionsList":"HTTP/1.1","MethodList":"POST"}'
 
 gg.makeRequest("https://www.httpdebugger.com/tools/ViewHttpHeaders.aspx", {
 ['Authorization'] = 'Maybe you need an Authorization header?',
